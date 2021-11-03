@@ -18,11 +18,12 @@ class InitialViewController: UIViewController {
     }
 
     @IBAction func startButtonPressed(_ sender: UIButton) {
-   
+        print("startButtonPressed")
     }
     
     @IBAction func termsAndConditionsPressed(_ sender: UIButton) {
-   
+        print("termsAndConditionsPressed")
+
     }
     
     /*
