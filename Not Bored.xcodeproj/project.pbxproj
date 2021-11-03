@@ -10,12 +10,17 @@
 		1439F2EDA90D71FF23117382 /* Pods_Not_Bored.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D024273B7B64CFE096E9624 /* Pods_Not_Bored.framework */; };
 		4938FE4E2733086A006BC15A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE4D2733086A006BC15A /* AppDelegate.swift */; };
 		4938FE502733086A006BC15A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE4F2733086A006BC15A /* SceneDelegate.swift */; };
-		4938FE522733086A006BC15A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE512733086A006BC15A /* ViewController.swift */; };
 		4938FE572733086D006BC15A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4938FE562733086D006BC15A /* Assets.xcassets */; };
 		4938FE5A2733086D006BC15A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4938FE582733086D006BC15A /* LaunchScreen.storyboard */; };
 		4938FE62273308BE006BC15A /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE61273308BE006BC15A /* Activity.swift */; };
 		4938FE6527330A11006BC15A /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE6327330A11006BC15A /* InitialViewController.swift */; };
 		4938FE6627330A11006BC15A /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4938FE6427330A11006BC15A /* InitialViewController.xib */; };
+		4938FE6A273315CD006BC15A /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE68273315CD006BC15A /* TermsAndConditionsViewController.swift */; };
+		4938FE6B273315CD006BC15A /* TermsAndConditionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4938FE69273315CD006BC15A /* TermsAndConditionsViewController.xib */; };
+		4938FE702733174E006BC15A /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE6E2733174E006BC15A /* ActivitiesViewController.swift */; };
+		4938FE712733174E006BC15A /* ActivitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4938FE6F2733174E006BC15A /* ActivitiesViewController.xib */; };
+		4938FE7527331779006BC15A /* SuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE7327331779006BC15A /* SuggestionViewController.swift */; };
+		4938FE7627331779006BC15A /* SuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4938FE7427331779006BC15A /* SuggestionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +28,18 @@
 		4938FE4A2733086A006BC15A /* Not Bored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Not Bored.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4938FE4D2733086A006BC15A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4938FE4F2733086A006BC15A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4938FE512733086A006BC15A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4938FE562733086D006BC15A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4938FE592733086D006BC15A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4938FE5B2733086D006BC15A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4938FE61273308BE006BC15A /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		4938FE6327330A11006BC15A /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		4938FE6427330A11006BC15A /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		4938FE68273315CD006BC15A /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
+		4938FE69273315CD006BC15A /* TermsAndConditionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsAndConditionsViewController.xib; sourceTree = "<group>"; };
+		4938FE6E2733174E006BC15A /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		4938FE6F2733174E006BC15A /* ActivitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesViewController.xib; sourceTree = "<group>"; };
+		4938FE7327331779006BC15A /* SuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewController.swift; sourceTree = "<group>"; };
+		4938FE7427331779006BC15A /* SuggestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestionViewController.xib; sourceTree = "<group>"; };
 		67C36228E5277DAB3B8D738A /* Pods-Not Bored.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Not Bored.debug.xcconfig"; path = "Target Support Files/Pods-Not Bored/Pods-Not Bored.debug.xcconfig"; sourceTree = "<group>"; };
 		B2C0A72D1CFBE0ED6B108FCD /* Pods-Not Bored.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Not Bored.release.xcconfig"; path = "Target Support Files/Pods-Not Bored/Pods-Not Bored.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +70,6 @@
 				67C36228E5277DAB3B8D738A /* Pods-Not Bored.debug.xcconfig */,
 				B2C0A72D1CFBE0ED6B108FCD /* Pods-Not Bored.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -87,15 +96,60 @@
 			children = (
 				4938FE4D2733086A006BC15A /* AppDelegate.swift */,
 				4938FE4F2733086A006BC15A /* SceneDelegate.swift */,
-				4938FE512733086A006BC15A /* ViewController.swift */,
 				4938FE562733086D006BC15A /* Assets.xcassets */,
 				4938FE582733086D006BC15A /* LaunchScreen.storyboard */,
 				4938FE5B2733086D006BC15A /* Info.plist */,
+				4938FE672733155B006BC15A /* Models */,
+				4938FE6D27331720006BC15A /* Login */,
+				4938FE6C2733170D006BC15A /* Terms and Conditions */,
+				4938FE7227331755006BC15A /* Activities */,
+				4938FE772733177E006BC15A /* Suggestion */,
+			);
+			path = "Not Bored";
+			sourceTree = "<group>";
+		};
+		4938FE672733155B006BC15A /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				4938FE61273308BE006BC15A /* Activity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4938FE6C2733170D006BC15A /* Terms and Conditions */ = {
+			isa = PBXGroup;
+			children = (
+				4938FE68273315CD006BC15A /* TermsAndConditionsViewController.swift */,
+				4938FE69273315CD006BC15A /* TermsAndConditionsViewController.xib */,
+			);
+			path = "Terms and Conditions";
+			sourceTree = "<group>";
+		};
+		4938FE6D27331720006BC15A /* Login */ = {
+			isa = PBXGroup;
+			children = (
 				4938FE6327330A11006BC15A /* InitialViewController.swift */,
 				4938FE6427330A11006BC15A /* InitialViewController.xib */,
 			);
-			path = "Not Bored";
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4938FE7227331755006BC15A /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				4938FE6E2733174E006BC15A /* ActivitiesViewController.swift */,
+				4938FE6F2733174E006BC15A /* ActivitiesViewController.xib */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		4938FE772733177E006BC15A /* Suggestion */ = {
+			isa = PBXGroup;
+			children = (
+				4938FE7327331779006BC15A /* SuggestionViewController.swift */,
+				4938FE7427331779006BC15A /* SuggestionViewController.xib */,
+			);
+			path = Suggestion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +212,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4938FE712733174E006BC15A /* ActivitiesViewController.xib in Resources */,
+				4938FE6B273315CD006BC15A /* TermsAndConditionsViewController.xib in Resources */,
 				4938FE5A2733086D006BC15A /* LaunchScreen.storyboard in Resources */,
 				4938FE572733086D006BC15A /* Assets.xcassets in Resources */,
+				4938FE7627331779006BC15A /* SuggestionViewController.xib in Resources */,
 				4938FE6627330A11006BC15A /* InitialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,10 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4938FE7527331779006BC15A /* SuggestionViewController.swift in Sources */,
 				4938FE6527330A11006BC15A /* InitialViewController.swift in Sources */,
-				4938FE522733086A006BC15A /* ViewController.swift in Sources */,
+				4938FE702733174E006BC15A /* ActivitiesViewController.swift in Sources */,
 				4938FE4E2733086A006BC15A /* AppDelegate.swift in Sources */,
 				4938FE62273308BE006BC15A /* Activity.swift in Sources */,
+				4938FE6A273315CD006BC15A /* TermsAndConditionsViewController.swift in Sources */,
 				4938FE502733086A006BC15A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

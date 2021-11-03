@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InitialViewController" customModule="Not_Bored" customModuleProvider="target">
             <connections>
+                <outlet property="participantsTextField" destination="Yx6-9H-0EX" id="zWT-IO-vOT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,6 +35,9 @@
                         <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                         <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="startButtonPressed:" destination="-1" eventType="touchUpInside" id="mpb-rj-SOO"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCG-NF-L6V">
                     <rect key="frame" x="87" y="802" width="220" height="40"/>
@@ -43,6 +47,9 @@
                     <buttonConfiguration key="configuration" style="plain" title="Terms and conditions">
                         <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="termsAndConditionsPressed:" destination="-1" eventType="touchUpInside" id="ufE-Nk-zMf"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Bored" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlx-2r-kMR">
                     <rect key="frame" x="128" y="188" width="158.5" height="41"/>

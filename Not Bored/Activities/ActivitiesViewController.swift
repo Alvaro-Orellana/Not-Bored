@@ -1,5 +1,5 @@
 //
-//  InitialViewController.swift
+//  ActivitiesViewController.swift
 //  Not Bored
 //
 //  Created by Alvaro Hernan Orellana Villarroel on 03/11/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class InitialViewController: UIViewController {
+class ActivitiesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
