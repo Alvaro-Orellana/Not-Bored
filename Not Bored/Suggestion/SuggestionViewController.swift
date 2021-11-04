@@ -9,21 +9,38 @@ import UIKit
 
 class SuggestionViewController: UIViewController {
     
-    var parameters : [String] = []
-    var activities = [Activity]()
+    var activityType: String!
     
+    
+    @IBOutlet weak var activityTitleLabel: UILabel!
+    @IBOutlet weak var participantsNumberLabel: UILabel!
+    @IBOutlet weak var priceTypeLabel: UILabel!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Aca va la activity sugerida"
-        getActivityData()
+        title = activityType.capitalized
+        getActivity()
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.prefersLargeTitles = false
+
+    }
+    
    
-    private func getActivityData(){
-        ActivitiesManager.shared.getActivities { activities in
-            if !activities.isEmpty{
-                self.activities.removeAll()
-                self.activities.append(activities.first!)
+    private func getActivity(){
+        ActivitiesManager.shared.getActivity(type: activityType) { [weak self] activity in
+            guard let self = self, let activity = activity else {
+                print("Error getting activity in SuggestionViewController")
+                return
             }
+            
+            print(activity)
+            self.activityTitleLabel.text = activity.activity
+            self.participantsNumberLabel.text = String(activity.participants)
+            self.priceTypeLabel.text = String(activity.price)
+          
         }
     }
     

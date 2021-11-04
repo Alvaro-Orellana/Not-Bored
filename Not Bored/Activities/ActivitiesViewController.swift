@@ -11,17 +11,21 @@ class ActivitiesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    let activities = ["Education", "Recreational", "Social","Diy",
+                      "Charity", "Cooking", "Relaxation", "Music", "Busywork"]
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        setupNavigationBar()
     }
 
 
-    private func setupNavigationBar() {
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.prefersLargeTitles = true
         title = "Activities"
- 
     }
 
     
@@ -30,12 +34,12 @@ class ActivitiesViewController: UIViewController {
 
 extension ActivitiesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return activities.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "test"
+        cell.textLabel?.text = activities[indexPath.row]
         return cell
     }
     
@@ -44,13 +48,13 @@ extension ActivitiesViewController: UITableViewDataSource {
 
 extension ActivitiesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tapped a row")
-        // TODO: Navigate to selected activity
-       
-        // navigate to suggestion ViewController
-        let suggestionVC = SuggestionViewController(nibName: "SuggestionViewController", bundle: nil)
-        navigationController?.pushViewController(suggestionVC, animated: true)
         
+        // navigate to SuggestionViewController
+        let suggestionVC = SuggestionViewController(nibName: "SuggestionViewController", bundle: nil)
+        let selectedActivity = activities[indexPath.row]
+        suggestionVC.activityType = selectedActivity.lowercased()
+        
+        navigationController?.pushViewController(suggestionVC, animated: true)
         tableView.deselectRow(at: indexPath, animated: false)
     }
     

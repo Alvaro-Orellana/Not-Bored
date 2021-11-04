@@ -19,18 +19,18 @@ class TabBarController: UITabBarController {
         activitiesVC.tabBarItem = UITabBarItem(title: "Activities",
                                                image: UIImage(systemName: "list.bullet.indent"),
                                                tag: 0)
-        // suggestion ViewController
+        // random ViewController
         let randomActivityVC = RandomActivityViewController()
         randomActivityVC.tabBarItem = UITabBarItem(title: "Random",
                                                image: UIImage(systemName: "shuffle"),
                                                tag: 1)
         
-        //Navigation controller
+        //Navigation controllers
         let activitiesNC = UINavigationController(rootViewController: activitiesVC)
-        let suggestionNC = UINavigationController(rootViewController: randomActivityVC)
+        let randomNC = UINavigationController(rootViewController: randomActivityVC)
         
-        //Present…
-        self.viewControllers = [activitiesNC, suggestionNC]
+        //Present
+        self.viewControllers = [activitiesNC, randomNC]
         
         
     }
