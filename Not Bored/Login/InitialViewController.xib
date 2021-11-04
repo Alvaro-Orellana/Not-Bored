@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InitialViewController" customModule="Not_Bored" customModuleProvider="target">
             <connections>
-                <outlet property="participantsTextField" destination="Yx6-9H-0EX" id="zWT-IO-vOT"/>
+                <outlet property="participantsTextField" destination="Yx6-9H-0EX" id="Ozd-cm-4k0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,16 +19,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Participants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2Z-y7-mik">
-                    <rect key="frame" x="97" y="398" width="122" height="29"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mt-MD-csW">
-                    <rect key="frame" x="109" y="744" width="196" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mt-MD-csW">
+                    <rect key="frame" x="20" y="736" width="374" height="38"/>
                     <color key="backgroundColor" red="0.16159572829999999" green="0.42634363250000001" blue="0.86087566609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Start">
@@ -39,9 +31,8 @@
                         <action selector="startButtonPressed:" destination="-1" eventType="touchUpInside" id="mpb-rj-SOO"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCG-NF-L6V">
-                    <rect key="frame" x="87" y="802" width="220" height="40"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCG-NF-L6V">
+                    <rect key="frame" x="97" y="782" width="220" height="40"/>
                     <color key="tintColor" systemColor="labelColor"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Terms and conditions">
@@ -57,18 +48,33 @@
                     <color key="textColor" red="0.096502626399999999" green="0.20634525870000001" blue="0.86087566609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter number of participants" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yx6-9H-0EX">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter number of participants" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yx6-9H-0EX">
                     <rect key="frame" x="20" y="467" width="374" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                 </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2Z-y7-mik">
+                    <rect key="frame" x="20" y="430" width="122" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.72632636370000003" green="0.92694577860000005" blue="0.94333755969999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="rCG-NF-L6V" firstAttribute="top" secondItem="6Mt-MD-csW" secondAttribute="bottom" constant="8" symbolic="YES" id="2BJ-SP-IXP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Mt-MD-csW" secondAttribute="trailing" constant="20" id="Aex-FK-ElC"/>
+                <constraint firstItem="6Mt-MD-csW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="FPG-uI-sqL"/>
+                <constraint firstItem="s2Z-y7-mik" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Fjj-aZ-Jze"/>
+                <constraint firstAttribute="bottom" secondItem="Yx6-9H-0EX" secondAttribute="bottom" constant="395" id="Hhb-Rs-vCI"/>
+                <constraint firstItem="Yx6-9H-0EX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="JTp-Bh-wIe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rCG-NF-L6V" secondAttribute="bottom" constant="40" id="OGa-Iv-iUF"/>
+                <constraint firstItem="rCG-NF-L6V" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Tli-6N-rkR"/>
                 <constraint firstItem="jlx-2r-kMR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="144" id="VgR-g3-nms"/>
                 <constraint firstItem="jlx-2r-kMR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WSO-fe-uXf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Yx6-9H-0EX" secondAttribute="trailing" constant="20" id="aft-XD-xGT"/>
+                <constraint firstItem="Yx6-9H-0EX" firstAttribute="top" secondItem="s2Z-y7-mik" secondAttribute="bottom" constant="8" symbolic="YES" id="tXK-8k-o3M"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </view>

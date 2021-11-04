@@ -9,21 +9,50 @@ import UIKit
 
 class ActivitiesViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.dataSource = self
+        tableView.delegate = self
+        setupNavigationBar()
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupNavigationBar() {
+        title = "Activities"
+ 
     }
-    */
 
+    
+
+}
+
+extension ActivitiesViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = "test"
+        return cell
+    }
+    
+  
+}
+
+extension ActivitiesViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("tapped a row")
+        // TODO: Navigate to selected activity
+       
+        // navigate to suggestion ViewController
+        let suggestionVC = SuggestionViewController(nibName: "SuggestionViewController", bundle: nil)
+        navigationController?.pushViewController(suggestionVC, animated: true)
+        
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+    
+    
 }

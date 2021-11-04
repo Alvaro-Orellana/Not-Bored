@@ -17,10 +17,14 @@
 		4938FE6627330A11006BC15A /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4938FE6427330A11006BC15A /* InitialViewController.xib */; };
 		4938FE6A273315CD006BC15A /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE68273315CD006BC15A /* TermsAndConditionsViewController.swift */; };
 		4938FE6B273315CD006BC15A /* TermsAndConditionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4938FE69273315CD006BC15A /* TermsAndConditionsViewController.xib */; };
-		4938FE702733174E006BC15A /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE6E2733174E006BC15A /* ActivitiesViewController.swift */; };
-		4938FE712733174E006BC15A /* ActivitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4938FE6F2733174E006BC15A /* ActivitiesViewController.xib */; };
 		4938FE7527331779006BC15A /* SuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE7327331779006BC15A /* SuggestionViewController.swift */; };
 		4938FE7627331779006BC15A /* SuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4938FE7427331779006BC15A /* SuggestionViewController.xib */; };
+		4938FE7E27332E8B006BC15A /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE7C27332E8B006BC15A /* ActivitiesViewController.swift */; };
+		4938FE7F27332E8B006BC15A /* ActivitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4938FE7D27332E8B006BC15A /* ActivitiesViewController.xib */; };
+		4938FE8227333680006BC15A /* ActivitiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE8127333680006BC15A /* ActivitiesManager.swift */; };
+		4938FE8A2733F23F006BC15A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FE892733F23F006BC15A /* TabBarController.swift */; };
+		49E1BF6327340722005D2C7D /* RandomActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1BF6127340722005D2C7D /* RandomActivityViewController.swift */; };
+		49E1BF6427340722005D2C7D /* RandomActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E1BF6227340722005D2C7D /* RandomActivityViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +40,14 @@
 		4938FE6427330A11006BC15A /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
 		4938FE68273315CD006BC15A /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
 		4938FE69273315CD006BC15A /* TermsAndConditionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsAndConditionsViewController.xib; sourceTree = "<group>"; };
-		4938FE6E2733174E006BC15A /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
-		4938FE6F2733174E006BC15A /* ActivitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesViewController.xib; sourceTree = "<group>"; };
 		4938FE7327331779006BC15A /* SuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewController.swift; sourceTree = "<group>"; };
 		4938FE7427331779006BC15A /* SuggestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestionViewController.xib; sourceTree = "<group>"; };
+		4938FE7C27332E8B006BC15A /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		4938FE7D27332E8B006BC15A /* ActivitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesViewController.xib; sourceTree = "<group>"; };
+		4938FE8127333680006BC15A /* ActivitiesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesManager.swift; sourceTree = "<group>"; };
+		4938FE892733F23F006BC15A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		49E1BF6127340722005D2C7D /* RandomActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomActivityViewController.swift; sourceTree = "<group>"; };
+		49E1BF6227340722005D2C7D /* RandomActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomActivityViewController.xib; sourceTree = "<group>"; };
 		67C36228E5277DAB3B8D738A /* Pods-Not Bored.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Not Bored.debug.xcconfig"; path = "Target Support Files/Pods-Not Bored/Pods-Not Bored.debug.xcconfig"; sourceTree = "<group>"; };
 		B2C0A72D1CFBE0ED6B108FCD /* Pods-Not Bored.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Not Bored.release.xcconfig"; path = "Target Support Files/Pods-Not Bored/Pods-Not Bored.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,8 +102,10 @@
 		4938FE4C2733086A006BC15A /* Not Bored */ = {
 			isa = PBXGroup;
 			children = (
+				4938FE802733362F006BC15A /* API */,
 				4938FE4D2733086A006BC15A /* AppDelegate.swift */,
 				4938FE4F2733086A006BC15A /* SceneDelegate.swift */,
+				4938FE892733F23F006BC15A /* TabBarController.swift */,
 				4938FE562733086D006BC15A /* Assets.xcassets */,
 				4938FE582733086D006BC15A /* LaunchScreen.storyboard */,
 				4938FE5B2733086D006BC15A /* Info.plist */,
@@ -104,6 +114,7 @@
 				4938FE6C2733170D006BC15A /* Terms and Conditions */,
 				4938FE7227331755006BC15A /* Activities */,
 				4938FE772733177E006BC15A /* Suggestion */,
+				49E1BF6527340728005D2C7D /* Random Activity */,
 			);
 			path = "Not Bored";
 			sourceTree = "<group>";
@@ -137,8 +148,8 @@
 		4938FE7227331755006BC15A /* Activities */ = {
 			isa = PBXGroup;
 			children = (
-				4938FE6E2733174E006BC15A /* ActivitiesViewController.swift */,
-				4938FE6F2733174E006BC15A /* ActivitiesViewController.xib */,
+				4938FE7C27332E8B006BC15A /* ActivitiesViewController.swift */,
+				4938FE7D27332E8B006BC15A /* ActivitiesViewController.xib */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -150,6 +161,23 @@
 				4938FE7427331779006BC15A /* SuggestionViewController.xib */,
 			);
 			path = Suggestion;
+			sourceTree = "<group>";
+		};
+		4938FE802733362F006BC15A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4938FE8127333680006BC15A /* ActivitiesManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		49E1BF6527340728005D2C7D /* Random Activity */ = {
+			isa = PBXGroup;
+			children = (
+				49E1BF6127340722005D2C7D /* RandomActivityViewController.swift */,
+				49E1BF6227340722005D2C7D /* RandomActivityViewController.xib */,
+			);
+			path = "Random Activity";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,12 +240,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4938FE712733174E006BC15A /* ActivitiesViewController.xib in Resources */,
 				4938FE6B273315CD006BC15A /* TermsAndConditionsViewController.xib in Resources */,
+				49E1BF6427340722005D2C7D /* RandomActivityViewController.xib in Resources */,
 				4938FE5A2733086D006BC15A /* LaunchScreen.storyboard in Resources */,
 				4938FE572733086D006BC15A /* Assets.xcassets in Resources */,
 				4938FE7627331779006BC15A /* SuggestionViewController.xib in Resources */,
 				4938FE6627330A11006BC15A /* InitialViewController.xib in Resources */,
+				4938FE7F27332E8B006BC15A /* ActivitiesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,10 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E1BF6327340722005D2C7D /* RandomActivityViewController.swift in Sources */,
 				4938FE7527331779006BC15A /* SuggestionViewController.swift in Sources */,
 				4938FE6527330A11006BC15A /* InitialViewController.swift in Sources */,
-				4938FE702733174E006BC15A /* ActivitiesViewController.swift in Sources */,
+				4938FE8227333680006BC15A /* ActivitiesManager.swift in Sources */,
+				4938FE8A2733F23F006BC15A /* TabBarController.swift in Sources */,
 				4938FE4E2733086A006BC15A /* AppDelegate.swift in Sources */,
+				4938FE7E27332E8B006BC15A /* ActivitiesViewController.swift in Sources */,
 				4938FE62273308BE006BC15A /* Activity.swift in Sources */,
 				4938FE6A273315CD006BC15A /* TermsAndConditionsViewController.swift in Sources */,
 				4938FE502733086A006BC15A /* SceneDelegate.swift in Sources */,
